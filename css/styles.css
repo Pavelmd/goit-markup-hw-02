@@ -1,6 +1,11 @@
+:root {
+    --primary-text-color:#757575;
+    --accent-color:#2196F3;
+    --title-text-color:#212121;
+}
 body {
 background-color: #F5F5F5;
-color: #757575;
+color: var(--primary-text-color);
 }
 .list {
     list-style:none;
@@ -8,11 +13,63 @@ color: #757575;
 .logo {
     color: #000000;
 }
+.logo:hover,
+.logo.footer:hover
+{
+    color: var(--accent-color);
+}
 .web {
-    color: #2196F3;
+    color: var(--accent-color);
 }
 /* site-nav */
+.site-nav .link {
+    color:  var(--title-text-color);
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+    color: var(--accent-color);
+}
+.site-nav .link.current {
+    color: var(--accent-color);
+}
+.contacts .link { 
+    color:var(--primary-text-color); 
+}
+.contacts .link:hover,
+.contacts .link:focus {
+    color: var(--accent-color);
+}
+.business {
+    background-color: #2F303A;
+}
+.business-title {
+    color:#FFFFFF;
+}
+.button {
+    cursor:pointer;
+    color: #FFFFFF;
+    background-color: var(--accent-color);
+}
+.section-title {
+    color: var(--title-text-color);
+}
+.name {
+    color: var(--title-text-color);
 
+}
+.footer {
+    background-color: #2F303A;
+}
+.logo.footer {
+    color:#FFFFFF;
+}
+.address {
+    color:#FFFFFF;
+}
+.list-mail,
+.list-tel {
+    color:rgba(255, 255, 255, 0.6);
+}
 
 /* Колір основного текста #212121 */
 /* Вторинний колір текста #757575 */
