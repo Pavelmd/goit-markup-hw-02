@@ -66,9 +66,13 @@ color: var(--primary-text-color);
 .address {
     color:#FFFFFF;
 }
-.list-mail,
-.list-tel {
+.link-footer {
     color:rgba(255, 255, 255, 0.6);
+}
+.link-footer:hover,
+.link-footer:focus
+ {
+    color: var(--accent-color);
 }
 
 /* Колір основного текста #212121 */
