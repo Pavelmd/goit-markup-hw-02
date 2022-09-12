@@ -50,6 +50,9 @@ color: var(--primary-text-color);
     color: #FFFFFF;
     background-color: var(--accent-color);
 }
+/* .button:hover, */
+/* .button:focus { */
+    /* color: var(--accent-color); */
 .section-title {
     color: var(--title-text-color);
 }
