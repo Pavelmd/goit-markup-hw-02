@@ -6,6 +6,7 @@
 body {
 background-color: #F5F5F5;
 color: var(--primary-text-color);
+font-family: Roboto, sans-serif; 
 }
 .list {
     list-style:none;
@@ -50,9 +51,15 @@ color: var(--primary-text-color);
     color: #FFFFFF;
     background-color: var(--accent-color);
 }
-/* .button:hover, */
-/* .button:focus { */
-    /* color: var(--accent-color); */
+.button-p {
+    cursor: pointer;
+    color: var(--title-text-color);
+    background-color:#F5F4FA;
+}
+.button-p:hover, 
+.button-p:focus { 
+     color: var(--accent-color); }
+
 .section-title {
     color: var(--title-text-color);
 }
