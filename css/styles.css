@@ -2,11 +2,13 @@
   --primary-text-color: #757575;
   --accent-color: #2196f3;
   --title-text-color: #212121;
+  --secondary-text-color: #FFFFFF;
 }
 body {
-  background-color: #f5f5f5;
+  background-color: #FFFFFF;
   color: var(--primary-text-color);
   font-family: Roboto, sans-serif;
+  font-size: 14px;
 }
 
 .list {
@@ -40,11 +42,9 @@ body {
 /* site-nav */
 .site-nav .link {
   color: var(--title-text-color);
-  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.02em;
 }
 .site-nav .link:hover,
@@ -56,9 +56,7 @@ body {
 }
 .contacts .link {
   color: var(--primary-text-color);
-  font-family: 'Roboto', sans-serif;
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
@@ -70,7 +68,7 @@ body {
   background-color: #2f303a;
 }
 .business-title {
-  color: #ffffff;
+  color: var(--secondary-text-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -80,8 +78,9 @@ body {
 }
 
 .button {
+  font-family: inherit;
   cursor: pointer;
-  color: #ffffff;
+  color: var(--secondary-text-color);
   background-color: var(--accent-color);
   font-family: inherit;
   font-weight: 700;
@@ -92,6 +91,11 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
 }
+.button:hover,
+.button:focus {
+  background-color: #188CE8;
+}
+
 .button-p {
   font-family: inherit;
   cursor: pointer;
@@ -104,14 +108,13 @@ body {
 }
 .button-p:hover,
 .button-p:focus {
-  color: #ffffff;
+  color: var(--secondary-text-color);
   background-color: var(--accent-color);
 }
 
 .section-title {
   color: var(--title-text-color);
   font-weight: 700;
-  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -119,8 +122,7 @@ body {
 
 .section-text {
   color: var(--primary-text-color);
-  font-size: 14px;
-  line-height: 24px;
+  line-height: 1.71;
   letter-spacing: 0.03em;
 }
 .work-title,
@@ -143,7 +145,6 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.18;
-
   letter-spacing: 0.03em;
 }
 
@@ -165,15 +166,15 @@ body {
   background-color: #2f303a;
 }
 .logo-footer {
-  color: #ffffff;
+  color: var(--secondary-text-color);
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
 }
 .address {
-  font-family: Roboto, sans-serif;
-  color: #ffffff;
+  font-style: normal;
+  color: var(--secondary-text-color);
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -181,15 +182,28 @@ body {
 }
 .link-footer {
   color: rgba(255, 255, 255, 0.6);
-  font-family: Roboto, sans-serif;
+  font-style: normal;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 14px; 
+  line-height: 1.71;
   letter-spacing: 0.03em;
 }
 .link-footer:hover,
 .link-footer:focus {
   color: var(--accent-color);
+}
+
+.visually-hidden { 
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
 
 /* Колір основного текста #212121 */
